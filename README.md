@@ -8,6 +8,7 @@ A command-line contacts manager built in python as part of my self-directed prog
 - Search contacts by name or phone number
 - View all saved contacts
 - Input validation
+- Delete contacts with confirmation prompt
 
 ## What I Learned 
 
@@ -62,3 +63,7 @@ several non-obvious programming concepts:
 **7. Empty input accepted**
 - Empty string stored as valid contact
 - Fix: `if name.strip() == "" or phone.strip() == "": continue`-
+
+**8. Confirmation input not normalized** — fixed by applying .lower().strip() to user confirmation input
+
+**9. Boolean flag reset inside loop** — initial delete implementation reset contact_found to False on non-matching iterations, fixed by removing else clause from loop
