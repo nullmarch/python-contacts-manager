@@ -1,4 +1,4 @@
-# simple-contact-book
+# python-contacts-manager
 learning project
 ## About 
 A command-line contacts manager built in python as part of my self-directed programming study.
