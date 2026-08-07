@@ -9,6 +9,7 @@ A command-line contacts manager built in python as part of my self-directed prog
 - View all saved contacts
 - Input validation
 - Delete contacts with confirmation prompt
+- Modify contacts with selective field updating — leave a field empty to keep existing value
 
 ## What I Learned 
 
@@ -33,6 +34,14 @@ several non-obvious programming concepts:
 
 - **Input validation** — stripping whitespace to prevent 
   empty strings being stored as valid data
+
+- **Functions and parameters** — refactored each task into its own function, 
+  passing the contacts list as a parameter to give functions access to shared data
+  
+- **Scope** — functions can only see variables passed to them or declared inside them
+
+- **Mutable objects as parameters** — lists passed to functions are not copied, 
+  the function gets direct access to the original, so changes persist after the function ends
 
 ## Bugs Fixed During Development
 
